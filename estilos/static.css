@@ -1,0 +1,106 @@
+
+.header__container {
+  text-indent: 5em;
+  
+}
+ 
+.nav-link  { 
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+  
+}
+
+.nav-link:hover {
+  text-shadow: 1px 1px 30px var(--rose-500);
+  color:var(--rose-300);
+  
+}
+
+
+.brand-font {
+  font-family: 'Italianno', cursive;
+}
+
+.navbar-brand {
+  font-family: 'Italianno', cursive !important;
+  font-weight: 700;
+}
+
+.offcanvas-title {
+  font-family: 'Italianno', cursive !important;
+  font-weight: 700;
+  color: white;
+}
+
+.brand-text {
+  font-family: 'Italianno', cursive;
+  font-size: 2cap;
+}
+
+.brand-text-footer {
+  font-family: 'Italianno', cursive;
+  font-size: 1rem;
+}
+
+
+/* Footer */
+
+footer .social-links {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer .social-links a {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  margin: 0 10px;
+}
+
+footer .social-links a:hover {
+  background-color: var(--rose-300);
+  transform: translateY(-3px);
+}
+
+footer .footer-content h6 {
+  color: var(--rose-300);
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Instrument Serif', serif;
+  letter-spacing: 0.5cap;
+}
+
+footer .footer-content p {
+  color: #ffe0ea;
+  font-size: 1rem;
+  text-indent: 0;
+  margin-bottom: 0.8rem;
+  opacity: 0.9;
+}
+
+footer .footer-content a {
+  color: #ffe0ea;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer .footer-content a:hover {
+  color: var(--rose-300);
+}
+
+footer .footer-content i {
+  color: var(--rose-300);
+  margin-right: 10px;
+  font-size: 1.1rem;
+}
+
+footer .copyright {
+  padding: 1.5rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 3rem;
+}

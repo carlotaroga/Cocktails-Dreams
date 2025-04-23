@@ -1,0 +1,231 @@
+/* Variables globales */
+:root {
+  --rose-100: #ffe0ea;
+  --rose-300: #ff97bb;
+  --rose-400: #ff5d98;
+  --rose-500: #ff247b;
+}
+
+/* Estilos base */
+body {
+  background: #282626;
+  font-family: 'Instrument Serif';
+  color: #ffe0ea;
+}
+
+/* Tipografía */
+.italian-text {
+  font-family: 'Italianno', cursive;
+  font-size: 1.3em;
+}
+
+p {
+  font-size: 1.2em;
+  text-indent: 2em;
+}
+
+p br + span {
+  display: inline-block;
+  text-indent: 2em;
+}
+ 
+h4 {
+  color: var(--rose-300); 
+  font-weight: 600;
+  font-style: normal;
+  padding: 3%;
+  letter-spacing: 0.5cap;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+/* Botones */
+.boton {
+  color: var(--rose-400);
+  background-color: #ffe0ea00;
+  padding: 10px 30px; 
+  border-color: var(--rose-400);
+  border-style: solid;
+  font-size: larger;
+  font-style: italic;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+}
+
+.boton:hover {
+  background-color: var(--rose-100); 
+}
+
+.boton2 {
+  font-size: 1.5rem;
+  padding: 8px 20px;
+  background-color: var(--rose-300);
+  color: white;
+  border: none;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-radius: 50px;
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+
+.boton2:hover {
+  background-color: var(--rose-400);
+  transform: scale(1.05);
+}
+
+/* Header y Hero */
+.container-fluid-main {
+  background-image: url('../assets/images/img.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 9%;
+  font-size: 3rem;
+  color: var(--rose-300);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-top: 56px;
+}
+
+.cocktailscontainer {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  width: 80%;
+  max-width: 800px;
+}
+
+.cocktailscontainer h2 {
+  font-size: 4rem;
+}
+
+/* Secciones principales */
+.section {
+  margin: 2rem 0;
+  margin-bottom: 5cap;
+}
+
+.section .container-section {
+  margin: 0 15px;
+  max-width: 100%;
+  padding: 0 10px;
+}
+
+.section .container-section .row {
+  display: flex;
+  align-items: stretch;
+}
+
+.section .container-section .row .col-lg:first-child {
+  display: flex;
+  align-items: center;
+  
+}
+
+.section .container-section .row .col-lg:first-child img {
+  background-color: var(--rose-100);
+  padding: 20px;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.section .container-section .row .col-lg:nth-child(2) {
+  color: #ffe0ea;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+/* Video */
+.video-playlist {
+  width: 100vw !important;
+  height: 50vh;
+  overflow: hidden;
+  position: relative;
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width: 100vw !important;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw !important;
+  margin-right: -50vw !important;
+}
+
+.video-player {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Productos */
+.navbar2 {
+  padding: 11%;   
+  font-family: 'MiFuente2';
+  color: var(--rose-100);
+  font-size: larger;
+  background-image: url(/img/img1.jpg);
+  background-size: cover;
+  letter-spacing: 0.5cap;
+  text-shadow: -1px -1px 1px #333, 1px -1px 1px #333, -1px 1px 1px #333, 1px 1px 1px #333;
+}
+
+/* Media Queries */
+/* Tablet (≥768px) */
+@media (min-width: 768px) {
+  .section .container-section {
+    margin: 0 auto;
+    max-width: 720px;
+    padding: 0 20px;
+  }
+}
+
+/* Desktop (≥992px) */
+@media (min-width: 992px) {
+  .section .container-section {
+    max-width: 960px;
+    padding: 0 40px;
+  }
+}
+
+/* Large Desktop (≥1200px) */
+@media (min-width: 1200px) {
+  .section .container-section {
+    max-width: 1140px;
+    padding: 0 50px;
+  }
+}
+
+/* Ajustes de tamaño para diferentes pantallas */
+@media (min-width: 992px) {
+  .section .container-section .row .col-lg:first-child img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section .container-section .row .col-lg:first-child img {
+    max-width: 95%;
+  }
+}
+
+    
