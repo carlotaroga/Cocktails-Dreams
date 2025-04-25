@@ -1,9 +1,86 @@
+/* Variables globales */
+:root {
+  --rose-100: #ffe0ea;
+  --rose-300: #ff97bb;
+  --rose-400: #ff5d98;
+  --rose-500: #ff247b;
+}
+
+/* Estilos base */
+body {
+  background: #282626;
+  font-family: 'Instrument Serif';
+  color: #ffe0ea;
+}
 
 .header__container {
   text-indent: 5em;
   
 }
+/* Tipografía */
+.italian-text {
+  font-family: 'Italianno', cursive;
+  font-size: 1.3em;
+}
+
+
+p br + span {
+  display: inline-block;
+  text-indent: 2em;
+}
  
+h4 {
+  color: var(--rose-300); 
+  font-weight: 600;
+  font-style: normal;
+  padding: 3%;
+  letter-spacing: 0.5cap;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+/* Botones */
+.boton {
+  color: var(--rose-400);
+  background-color: #ffe0ea00;
+  padding: 10px 30px; 
+  border-color: var(--rose-400);
+  border-style: solid;
+  font-size: larger;
+  font-style: italic;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+}
+
+.boton:hover {
+  background-color: var(--rose-100); 
+}
+
+.boton2 {
+  font-size: 1.5rem;
+  padding: 8px 20px;
+  background-color: var(--rose-300);
+  color: white;
+  border: none;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-radius: 50px;
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+
+.boton2:hover {
+  background-color: var(--rose-400);
+  transform: scale(1.05);
+}
+
+ /* Nav */
 .nav-link  { 
   color: white;
   text-decoration: none;
@@ -23,25 +100,16 @@
 }
 
 .navbar-brand {
-  font-family: 'Italianno', cursive !important;
-  font-weight: 700;
+  font-family: 'Italianno', cursive !important; 
+  font-size: 1.8rem;
 }
 
 .offcanvas-title {
   font-family: 'Italianno', cursive !important;
-  font-weight: 700;
   color: white;
+  font-size: 1.8rem;
 }
 
-.brand-text {
-  font-family: 'Italianno', cursive;
-  font-size: 2cap;
-}
-
-.brand-text-footer {
-  font-family: 'Italianno', cursive;
-  font-size: 1rem;
-}
 
 
 /* Footer */
@@ -103,4 +171,43 @@ footer .copyright {
   padding: 1.5rem 0;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   margin-top: 3rem;
+}
+
+
+/* Media Queries */
+/* Tablet (≥768px) */
+@media (min-width: 768px) {
+  .section .container-section {
+    margin: 0 auto;
+    max-width: 720px;
+    padding: 0 20px;
+  }
+
+}
+
+/* Desktop (≥992px) */
+@media (min-width: 992px) {
+  .section .container-section {
+    max-width: 960px;
+    padding: 0 40px;
+  }
+  .section .container-section .row .col-lg:first-child img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+
+ 
+}
+
+/* Large Desktop (≥1200px) */
+@media (min-width: 1200px) {
+  .section .container-section {
+    max-width: 1140px;
+    padding: 0 50px;
+  }
+
+  .section .container-section .row .col-lg:first-child img {
+    max-width: 95%;
+  }
 }

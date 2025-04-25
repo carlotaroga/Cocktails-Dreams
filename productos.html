@@ -17,7 +17,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Italianno&display=swap" rel="stylesheet">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="./estilos/index.css" />
   <link rel="stylesheet" href="./estilos/static.css" />
   <link rel="stylesheet" href="./estilos/productos.css" />
 </head>
@@ -25,13 +24,13 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid px-5">
-      <a class="navbar-brand" href="index.html">COCKTAILS & DREAMS</a>
+      <a class="navbar-brand" href="index.html">Cocktails & Dreams</a>
       <button class="navbar-toggler" type="button" style="margin-right: 3%;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">COCKTAILS & DREAMS</h5>
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Cocktails & Dreams</h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
@@ -48,108 +47,110 @@
     </div>
   </nav>
 
-  <nav class="navbar2" data-bs-theme="dark">
-    <div class="container-fluid2">
-      <h4 class="navbar-brand2">¡Explora sabores nuevos sabores!</h4>
-      <div class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Buscar..." id="nombrebebida">
-        <button class="btn btn-dark btn-outline-white" onclick="buscarbebidas()">Buscar</button>
-        <button class="btn btn-dark btn-outline-white ms-2" onclick="buscarAleatorio()">Aleatorio</button>
-      </div>
+  <nav class="navbar2" data-bs-theme="dark">   
+    <h4 class="navbar-brand2">¡Explora nuevos sabores!</h4>
+    <div class="d-flex" role="search">
+      <input class="form-control" type="search" placeholder="Buscar..." id="nombrebebida">
+      <button class="btn btn-dark mr-2" onclick="buscarbebidas()">Buscar</button>
+      <button class="btn btn-dark" onclick="buscarAleatorio()">Aleatorio</button>
     </div>
   </nav>
     
-    <div class="container" style="padding: 30px;">
+    <div class="container-section">
+      <div id="mensaje-busqueda" class="texto-efecto">
+        <p>Intenta buscar por nombre, tipo de alcohol, ingrediente... o haz click en el botón aleatorio para descubrir algo nuevo.</p>
+      </div>
+
       <template id="templatebebida">
-          <div class="col">
-              <div class="card">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                  <h5 class="card-title"></h5>
-              </div>
-              </div>
-          </div>
-      </template>
-
-      <div class="row row-cols-1 row-cols-md-4 g-4" id="listadobebidas"></div>
-    </div>
- 
-      
-      <footer>
-        <div class="container">
-          <!-- Social Links -->
-          <div class="social-links text-center">
-            <a href="" class="text-light">
-              <i class="bi bi-facebook"></i>
-            </a>
-            <a href="" class="text-light">
-              <i class="bi bi-twitter"></i>
-            </a>
-            <a href="" class="text-light">
-              <i class="bi bi-instagram"></i>
-            </a>
-          </div>
-
-          <!-- Footer Content -->
-          <div class="footer-content">
-            <div class="row mt-5">
-              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                <h6 class="fw-bold text-light">
-                  <span class="brand-text">Cocktails & Dreams</span>
-                </h6>
-                <p class="text-light">
-                  Desde los clásicos hasta nuestras creaciones exclusivas, cada cóctel es una experiencia única. Acompaña tus bebidas con delicias gastronómicas preparadas por nuestros expertos chefs.
-                </p>
-              </div>
-
-              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                <h6 class="fw-bold text-light">Productos</h6>
-                <p>
-                  <a href="productos.html" class="text-light">Productos</a>
-                </p>
-                <p>
-                  <a href="index.html" class="text-light">Inicio</a>
-                </p>
-              </div>
-
-              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                <h6 class="fw-bold text-light">Ayuda</h6>
-                <p>
-                  <a href="#!" class="text-light">Protección de datos</a>
-                </p>
-                <p>
-                  <a href="#!" class="text-light">Política de privacidad</a>
-                </p>
-              </div>
-
-              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                <h6 class="fw-bold text-light">Contacto</h6>
-                <p class="text-light">
-                  <i class="bi bi-pin-map"></i>
-                  Paseo de la Castellana, 95, Planta 10. A. Madrid C.P. 28046
-                </p>
-                <p class="text-light">
-                  <i class="bi bi-envelope"></i>
-                  info@cocktailanddreams.es
-                </p>
-                <p class="text-light">
-                  <i class="bi bi-telephone"></i>
-                  +34 91 400 40 38
-                </p>
-              </div>
+        <div class="col">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
             </div>
           </div>
+        </div>
+      </template>
 
-          <!-- Copyright -->
-          <div class="copyright text-center text-light">
-            © 2024 Copyright: 
-            <span class="brand-text-footer">Cocktails & Dreams</span>
+      <div class="row row-cols-lg-8 row-cols-md-4 g-4" id="listadobebidas"></div>
+    </div>
+
+
+  <footer>
+    <div class="container">
+      <!-- Social Links -->
+      <div class="social-links text-center">
+        <a href="" class="text-light">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="" class="text-light">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="" class="text-light">
+          <i class="bi bi-instagram"></i>
+        </a>
+      </div>
+
+      <!-- Footer Content -->
+      <div class="footer-content">
+        <div class="row mt-5">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <h2 class="brand-font text-light">
+              <span class="">Cocktails & Dreams</span>
+            </h2>
+            <p class="text-light">
+              Desde los clásicos hasta nuestras creaciones exclusivas, cada cóctel es una experiencia única. Acompaña tus bebidas con delicias gastronómicas preparadas por nuestros expertos chefs.
+            </p>
+          </div>
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="fw-bold text-light">Productos</h6>
+            <p>
+              <a href="productos.html" class="text-light">Productos</a>
+            </p>
+            <p>
+              <a href="index.html" class="text-light">Inicio</a>
+            </p>
+          </div>
+
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="fw-bold text-light">Ayuda</h6>
+            <p>
+              <a href="#!" class="text-light">Protección de datos</a>
+            </p>
+            <p>
+              <a href="#!" class="text-light">Política de privacidad</a>
+            </p>
+          </div>
+
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="fw-bold text-light">Contacto</h6>
+            <p class="text-light">
+              <i class="bi bi-pin-map"></i>
+              Paseo de la Castellana, 95, Planta 10. A. Madrid C.P. 28046
+            </p>
+            <p class="text-light">
+              <i class="bi bi-envelope"></i>
+              info@cocktailanddreams.es
+            </p>
+            <p class="text-light">
+              <i class="bi bi-telephone"></i>
+              +34 91 400 40 38
+            </p>
           </div>
         </div>
-      </footer>
+      </div>
+
+      <!-- Copyright -->
+      <div class="copyright text-center text-light">
+        © 2024 Copyright: 
+        <span class="brand-text-footer">Cocktails & Dreams</span>
+      </div>
+    </div>
+  </footer>
 
   <script>
-      function buscarbebidas(){
+   function buscarbebidas(){
           let nombrebebida = document.getElementById("nombrebebida").value;
           let url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=" + nombrebebida;
 
@@ -204,8 +205,6 @@
       }
   </script>
 
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 

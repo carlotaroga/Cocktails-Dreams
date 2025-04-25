@@ -1,57 +1,50 @@
-/* Variables */
-:root {
-  --rose-300: #ff97bb;
-  --rose-400: #ff5d98;
-}
 
-/* Estilos generales */
+/* General */ 
 p {
-  font-size: 1.3rem;
-  color: black;
+  font-size: 1.2em;
 }
 
 .login {
   color: #ffeff3;
   background-position: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/img4.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/img7.jpg);
   background-size: cover;
   background-attachment: fixed;
   text-align: center;
   justify-content: center; 
   display: flex;
-  padding: 80px 0;
+  padding: 90px;
+
 }
 
 .login .container-login {
-  margin: 0 auto;
   max-width: 1200px;
-  padding: 0 20px;
-}
-
-/* Sección de Login */
-#Login {
-  background-color: rgba(0, 0, 0, 0.641);
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 15px;
   backdrop-filter: blur(10px);
-  padding: 40px;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+
 }
 
-.form {         
-  width: 100%;
-}
-
+/* Checkboxes */
 .form__input {
   border: 2px solid rgba(255, 255, 255, 0.2);
   width: 100%;
   padding: 12px 20px;
   border-radius: 8px;
   outline: none;
-  font-size: 1rem;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: #212529;
+  margin-bottom: 1rem;
+}
+
+.form__input option {
+  background-color: #212529;
   color: #fff;
-  margin-bottom: 20px;
-  transition: all 0.3s ease;
+  padding: 10px;
+}
+
+.form__input option:hover {
+  background-color: var(--rose-300) !important;
 }
 
 .form__input:focus {
@@ -64,72 +57,57 @@ p {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* Checkboxes */
 .form-check {
   display: flex;
   align-items: center;
-  margin: 15px 0;
-  cursor: pointer;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.form-check-input {
+  margin-top: 0;
+  margin-right: 0.5rem;
 }
 
 .form-check input[type="checkbox"] {
-  margin-right: 10px;
   cursor: pointer;
 }
 
-/* Botón de envío */
-.form__submit {
-  width: 100%;
-  padding: 12px;
-  border-radius: 25px;
-  font-size: 1.1rem;
-  font-weight: 600;
-  background-color: var(--rose-300);
-  color: white;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  margin-top: 20px;
+.form-check-input:checked {
+  background-color: var(--rose-300) !important;
+  border-color: var(--rose-300) !important;
 }
 
-.form__submit:hover {
-  background-color: var(--rose-400);
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(255, 151, 187, 0.4);
+.form-check-input:focus {
+  border-color: var(--rose-300);
+  box-shadow: 0 0 0 0.25rem rgba(255, 151, 187, 0.25);
 }
 
-/* Sección de Contacto */
-#Contacto {
-  background-color: rgba(255, 255, 255, 0.756);
-  padding: 40px;
-  border-radius: 15px;
-  margin-top: 30px;
-  align-items: center;
+.form-label {
+  font-size: 1.2em;
+
 }
 
-#Contacto h4 {
-  color: #333;
-  font-family: 'Instrument Serif', serif;
-  font-size: 1.5rem;
-  
-}
-
-#Contacto i {
-  color: var(--rose-300);
-  margin-right: 5px;
+.form-check-label {
+  font-size: 1.2em;
  
 }
 
-/* Responsive */
-@media (min-width: 768px) {
-  .login .container-login {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    align-items: start;
-  }
-
-  #Contacto {
-    margin-top: 0;
-  }
+/* Mapa */
+.map-container {
+  border-radius: 10px;
+  overflow: hidden;
 }
+
+/* Separador*/
+.vr {
+  margin: 0 1rem;
+
+}
+
+
+
+
+
+ 

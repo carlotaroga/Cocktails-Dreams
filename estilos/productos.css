@@ -1,0 +1,66 @@
+/* Navbar */
+.navbar2 {  
+    color: var(--rose-100);
+    font-size: larger;
+    background-image: url(../assets/images/img10.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;   
+    padding: 90px;
+}
+
+.container-section {
+    padding: 5rem !important;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 60vh;
+}
+
+.navbar2 .d-flex {
+    
+    justify-content: center;
+     
+    gap: 1rem;
+}
+
+.navbar2 .form-control {
+    max-width: 500px;
+}
+
+/* Card */
+
+.card {
+    height: 100%;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    background-color: var(--rose-100);
+    padding: 1rem;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.texto-efecto {
+    text-align: center;
+    color: var(--rose-100);
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+
+
+ 
