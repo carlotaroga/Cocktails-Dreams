@@ -13,7 +13,8 @@ p {
   text-align: center;
   justify-content: center; 
   display: flex;
-  padding: 90px;
+  padding: 100px;
+  padding-top: 150px;
 
 }
 
