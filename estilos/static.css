@@ -17,16 +17,11 @@ body {
   text-indent: 5em;
   
 }
+
 /* Tipografía */
 .italian-text {
   font-family: 'Italianno', cursive;
-  font-size: 1.3em;
-}
-
-
-p br + span {
-  display: inline-block;
-  text-indent: 2em;
+  white-space: nowrap;
 }
  
 h4 {
@@ -93,7 +88,6 @@ h4 {
   color:var(--rose-300);
   
 }
-
 
 .brand-font {
   font-family: 'Italianno', cursive;

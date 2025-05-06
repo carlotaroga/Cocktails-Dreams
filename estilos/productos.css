@@ -16,10 +16,8 @@
     min-height: 60vh;
 }
 
-.navbar2 .d-flex {
-    
-    justify-content: center;
-     
+.navbar2 .d-block {
+    justify-content: center;    
     gap: 1rem;
 }
 
@@ -27,6 +25,31 @@
     max-width: 500px;
 }
 
+.texto-efecto {
+    text-align: center;
+    font-size: 1.5rem;
+    opacity: 0.8;
+    transition: opacity 0.5s ease;
+  
+    background: linear-gradient(to right, #f43f5e, #f9a8d4, #f43f5e); /* rosa-100 degradado */
+    background-size: 200% auto;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+    animation: deslizar-color 3s linear infinite;
+  }
+  
+  @keyframes deslizar-color {
+    0% {
+      background-position: 0% center;
+    }
+    100% {
+      background-position: -200% center;
+    }
+  }
+  
 /* Card */
 
 .card {
@@ -55,12 +78,36 @@
     margin-bottom: 0.5rem;
 }
 
-.texto-efecto {
-    text-align: center;
-    color: var(--rose-100);
-    font-size: 1.5rem;
-    opacity: 0.8;
-}
+/* Pantallas medianas y pequeñas: hasta 991px */
+@media (max-width: 991.98px) {
+    .navbar2 {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    #nombrebebida {
+      width: 100%;
+      max-width: 400px;   /* o el tamaño que quieras */
+      margin: 0 auto;      /* centra el input sin encogerlo */
+    }
+  
+    .navbar2 .btn {
+      margin-top: 0.5rem;
+    }
+  }
+  
+  
+  /* Pantallas grandes (desktop, ≥992px) */
+  @media (min-width: 992px) {
+    .navbar2 .d-block {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+  }
+  
 
+    
 
  

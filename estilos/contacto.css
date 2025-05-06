@@ -21,7 +21,7 @@ p {
 .login .container-login {
   max-width: 1200px;
   padding: 40px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0);
   border-radius: 15px;
   backdrop-filter: blur(10px);
 
@@ -107,6 +107,16 @@ p {
 
 }
 
+
+@media (max-width: 768px) {
+  
+.login {
+  padding: 10% 0% 0%;
+  background-color: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(5px);
+}
+
+}
 
 
 

@@ -1,33 +1,29 @@
-/* Header y Hero */
+/* Header y Hero mejorado */
 .container-fluid-main {
   background-image: url('../assets/images/img.jpg');
   background-size: cover;
   background-position: center;
-  padding: 9%;
-  font-size: 3rem;
-  color: var(--rose-300);
-  justify-content: center;
+  background-repeat: no-repeat;
   display: flex;
+  justify-content: center;
   align-items: center;
   margin-top: 56px;
+  min-height: 60vh;
+  
 }
 
 .cocktailscontainer {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 5%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 15px;
-  backdrop-filter: blur(5px);
-  width: 80%;
-  max-width: 800px;
+  padding: 10%;
+
 }
 
 .cocktailscontainer h2 {
-  font-size: 4rem;
+  font-size: 6rem;
+  font-weight: 600;
+  color: white;
+  text-shadow: 1px 1px 4px var(--rose-500);
 }
+
 
 /* Secciones principales */
 
@@ -99,3 +95,10 @@ p {
    
 }
     
+@media (max-width: 768px) {
+  .cocktailscontainer h2 {
+    font-size: 5rem;
+    
+  }
+
+}
