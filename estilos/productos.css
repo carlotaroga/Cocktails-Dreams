@@ -50,32 +50,90 @@
     }
   }
   
-/* Card */
-
-.card {
+/* Tarjetas de bebidas */
+#listadobebidas .card {
     height: 100%;
-    transition: transform 0.3s ease;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+    border: 1px solid rgba(255, 151, 187, 0.2);
+    border-radius: 1rem;
+    background: #302a2e;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.card:hover {
-    transform: translateY(-5px);
+#listadobebidas .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 34px rgba(0, 0, 0, 0.42);
 }
 
-.card-img-top {
-    height: 200px;
+#listadobebidas .card-img-top {
+    display: block;
+    width: 100%;
+    height: 230px;
     object-fit: cover;
+    transition: transform 0.5s ease;
 }
 
-.card-body {
-    background-color: var(--rose-100);
-    padding: 1rem;
+#listadobebidas .card:hover .card-img-top {
+    transform: scale(1.04);
 }
 
-.card-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
+#listadobebidas .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.25rem;
+    background: linear-gradient(180deg, #383035 0%, #2b2629 100%);
+}
+
+#listadobebidas .card-title {
+    margin: 0 0 0.75rem;
+    color: #fff4f7;
+    font-size: 1.45rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+#listadobebidas .card-category {
+    display: inline-block;
+    margin: 0 0 1rem;
+    padding: 0.35rem 0.7rem;
+    border-radius: 999px;
+    background: rgba(255, 93, 152, 0.16);
+    color: #ffb2cb;
+    font-family: Arial, sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+#listadobebidas .card-ingredients {
+    width: 100%;
+    margin: auto 0 0;
+    padding-top: 0.85rem;
+    border-top: 1px solid rgba(255, 151, 187, 0.2);
+    color: #e2cfd6;
+    font-family: Arial, sans-serif;
+    font-size: 0.85rem;
+    line-height: 1.55;
+}
+
+#listadobebidas .card-ingredients::before {
+    display: block;
+    margin-bottom: 0.35rem;
+    color: #ff97bb;
+    content: "Ingredientes";
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+@media (max-width: 575.98px) {
+    #listadobebidas .card-img-top {
+        height: 250px;
+    }
 }
 
 /* Pantallas medianas y pequeñas: hasta 991px */

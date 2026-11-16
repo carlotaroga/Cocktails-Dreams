@@ -67,6 +67,8 @@
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title"></h5>
+              <h6 class= "card-category"> </h6>
+              <p class="card-ingredients mb-0"></p>
             </div>
           </div>
         </div>
@@ -183,9 +185,7 @@
 
     const peticiones = [
       fetch("https://www.thecocktaildb.com/api/json/v1/1/random.php"),
-      fetch("https://www.thecocktaildb.com/api/json/v1/1/random.php"),
-      fetch("https://www.thecocktaildb.com/api/json/v1/1/random.php"),
-      fetch("https://www.thecocktaildb.com/api/json/v1/1/random.php"),
+      
     ];
 
     Promise.all(peticiones)
@@ -209,7 +209,15 @@
       bebidaCard.querySelector("img").src = bebida.strDrinkThumb;
       bebidaCard.querySelector("img").alt = bebida.strDrink;
       bebidaCard.querySelector(".card-title").innerHTML = bebida.strDrink;
-
+      bebidaCard.querySelector(".card-category").innerHTML = bebida.strCategory;
+      const ingredientes = [];
+      for (let i = 1; i <= 15; i++) {
+        const ingrediente = bebida[`strIngredient${i}`];
+        if (ingrediente && ingrediente.trim()) ingredientes.push(ingrediente.trim());
+      }
+      bebidaCard.querySelector(".card-ingredients").textContent = ingredientes.length
+        ? `Ingredientes: ${ingredientes.join(", ")}`
+        : "Ingredientes no disponibles";
       listadobebidas.appendChild(bebidaCard);
     }
   </script>
